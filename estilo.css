@@ -1,7 +1,10 @@
 @charset "UTF-8";
+/*Padrão brasileiro*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
+/*Importando fonte do google fonts*/
 
 @font-face {
+    /*Chamando a fonte baixaida*/
     font-family: 'Android';
     src: url(../fontes/idroid.otf) format('opentype');
     font-weight: normal;
@@ -12,42 +15,54 @@
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
+    /*Criando váriaveis para as cores*/
     --cor4: #1a5c37;
     --cor5: #063d1e;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
+    /*Criando váriaveis para as fontes*/
     --fonte-android: 'Android', cursive;
 }
 
 * {
+    /*A página toda vai ter margem e padding 0*/
     margin: 0px;
     padding: 0px;
 }
 
 body {
+    /*Definindo cor de fundo e fonte a ser usado no corpo*/
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
 a.externo::after {
+    /*Todo linko externo vai ter um símbolo indicando o que ele é*/
     content: "\00A0\1F517";
 }
 
 header {
+    /*Configurando o cabeçalho do site*/
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    /*Criando efeito degradê*/
     min-height: 150px;
+    /*Altura minimá*/
     text-align: center;
     padding-top: 40px;
+    /*Margem da parte de cima interna*/
 }
 
 header>h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    /*Tamando da fonte*/
     font-weight: normal;
     margin-bottom: 20px;
+    /*Marigin embaixo*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    /*Definindo sombra do texto*/
 
 }
 
@@ -56,42 +71,60 @@ header>p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     max-width: 600px;
+    /*Quantidade máximma de pixels*/
     padding-right: 10px;
+    /*margin interna a direita*/
     padding-left: 10px;
+    /*margin interna a esquerda*/
     margin: auto;
+    /*Centralizando usando a margem*/
     padding-bottom: 50px;
+    /*margin interna de 50px*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    /*Definindo sombra do texto*/
 }
 
 nav#menu {
     background-color: var(--cor5);
     padding: 10px;
+    /*Margem interna*/
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+    /*Criando sombras*/
 }
 
 nav>a {
     color: var(--cor1);
     padding: 10px;
+    /*Margem interna*/
     border-radius: 5px;
+    /*Criando borda em volta dos links*/
     text-decoration: none;
     font-weight: bold;
+    /*destacado*/
     transition-duration: 0.5s;
+    /*Tempo de animação*/
 }
 
 nav>a:hover {
     background-color: var(--cor3);
+    /*Definindo cores do hover*/
     color: var(--cor5);
 }
 
 main {
     min-width: 300px;
+    /*Definindo maximmo e minimo de largura*/
     max-width: 1000px;
     margin: auto;
+    /*Centralizando conteudo*/
     margin-bottom: 30px;
+    /*margem embaixo*/
     padding: 20px;
+    /*Margem interna*/
     background-color: white;
     box-shadow: 0px 0px 10x rgba(0, 0, 0, 0.418);
     border-bottom-right-radius: 10px;
+    /*Criando borda*/
     border-bottom-left-radius: 10px;
 }
 
@@ -108,19 +141,24 @@ main h2 {
     font-size: 1.3em;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
+    /*Efeito degradê no back do H2*/
     text-indent: 8px;
 }
 
 main p {
     margin: 15px 0px;
     text-align: justify;
+    /*Justificando texto*/
     text-indent: 30px;
+    /*texto indentado*/
     font-size: 1em;
     line-height: 2em;
+    /*Altura da linha*/
 }
 
 main strong {
     color: var(--cor4);
+    /*Cor do destaque*/
     font-weight: bold;
 
 }
@@ -131,32 +169,34 @@ main a {
     color: var(--cor5);
     background-color: var(--cor1);
     padding: 2px 6px;
+    /*margem do destaque*/
 }
 
 main a:hover {
     text-decoration: underline;
+    /*Assim que o usuário passar o mouse por cima do link, ele ficará sublinhado*/
     color: var(--cor4);
 }
 
 main img {
-    width: 100%;
+    width: 100%; /*largura da imagem*/
 }
 
 .pequena {
-    max-width: 350px;
-    display: block;
-    margin: auto;
+    max-width: 350px; /*maximo de largura*/
+    display: block; /*transformando em bloco*/
+    margin: auto; /*centralizando imagem*/
 }
 
-.video {
-    background-color: var(--cor5);
+.video { /*Criando partes para a responsavidade do video*/
+    background-color: var(--cor5); 
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 58%;
     position: relative;
 }
 
-div.video>iframe {
+div.video>iframe { /*Configurando largura e altura*/
     position: absolute;
     top: 5%;
     left: 5%;
@@ -166,23 +206,23 @@ div.video>iframe {
 
 aside {
     background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    padding: 10px; /*margem interna*/
+    border-radius: 10px; /*Crriando borda*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281); /*sombra*/
 }
 
 aside>h3 {
     background-color: var(--cor4);
     color: white;
-    padding: 5px;
+    padding: 5px; /*Margem interna*/
     margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px; /*Definindo bordas*/
 }
 
 aside>ul {
-    list-style-type: "\2714\00A0\00A0";
-    list-style-position: inside;
-    columns: 2;
+    list-style-type: "\2714\00A0\00A0"; /*Colocando icones no lado do lista*/
+    list-style-position: inside; /*pra ficar dentro do aside*/
+    columns: 2; /*Transformando uma coluna em 2*/
 }
 
 footer {
@@ -190,7 +230,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
+    padding: 5px; /*margem interna*/
 }
 
 footer a {

@@ -5,29 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 10</title>
+    <title>Site Android</title>
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+    <!--Link para a mudança de icone do site-->
     <link rel="stylesheet" href="estilo.css">
+    <!--Link para a interligação do estilo-->
 </head>
 
 <body>
     <header>
+        <!--Cabeçalho da página-->
         <h1>Curiosidades de Tecnologias</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo tech, em um único lugar.</p>
 
     </header>
     <nav id="menu">
+        <!--Criação do Menu da página-->
         <a href="#">Home</a>
         <a href="#">Noticias</a>
         <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
+        <a href="#">Contato</a>
     </nav>
     <main>
+        <!--Inicio do meu contéudo principal-->
         <article>
+            <!--artigo da página-->
             <h1>História do Mascote do Android</h1>
 
             <p>
                 Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo
+                <!--Destacando palavras-->
                 <strong>Google</strong> é um dos mais utilizados
                 para
                 dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e
@@ -41,6 +48,7 @@
                 A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a
                     href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/"
                     target="_blank" class="externo">Dan Morrill</a>.
+                <!--Utilizando links externos-->
                 Ele
                 conta que abriu o <a href="https://inkscape.org/pt-br/" target="_blank" class="externo">Inkscape</a>
                 (software livre
@@ -52,7 +60,9 @@
             </p>
 
             <picture>
+                <!--Utilizando essa tag para a responsavidade do site-->
                 <source media="(max-width: 670px)" srcset="imagens/dan-droids-pq.png">
+                <!--Colocando o máximo de largura que a imagem vai ter.-->
                 <img src="imagens/dan-droids.png" alt="primeiro mascote android">
             </picture>
 
@@ -73,6 +83,7 @@
 
 
             <picture>
+                <!--Mais uma vez usando a responsividade-->
                 <source media="(min-width: 670px)" srcset="imagens/irina-blok.jpg">
                 <img src="imagens/irina-blok-pq.jpg" alt="criadora do bugdroid">
             </picture>
@@ -87,6 +98,7 @@
             </p>
 
             <img src="./imagens/bugdroid.png" class="pequena" alt="bugdroid">
+            <!--Inserindo uma imagem na página-->
 
             <p>
                 A principal inspiração para os traços do novo <strong>Bugdroid</strong> veio daqueles bonequinhos que
@@ -98,6 +110,7 @@
             </p>
 
             <div class="video">
+                <!--Div criada para mais na frente usar a responsavidade-->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -105,6 +118,7 @@
             </div>
 
             <aside>
+                <!--Contéudo secundário-->
                 <h3>Quer aprender mais?</h3>
                 <p>
                     Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um
@@ -113,8 +127,10 @@
                     ordem alfabética a partir da versão 1.5 até a 9.0.
                 </p>
                 <ul>
+                    <!--Criação de uma lista-->
                     <li>
                         <abbr title="Bolo de copo">1.5 - Cupcake</abbr>
+                        <!--A tag abbr é usada para traduzir uma palavra assim que o mouse passa por cima da mesma-->
                     </li>
                     <li>
                         <abbr title="Rosquinha">1.6 - Donut</abbr>
@@ -170,16 +186,16 @@
                     uma
                     trouxe para o sistema Android.
                 </p>
-            </aside>
+            </aside> <!--Fim do contéudo secundário-->
 
             <p>
                 Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android
                 e
                 seu simpático mascote.
             </p>
-        </article>
-    </main>
-    <footer>
+        </article> <!--Fim do artigo-->
+    </main> <!--Fim do contéudo principal-->
+    <footer> <!--Iniciando o rodapé da página-->
         <p>Site criado por Caio Vinicius para treinamento em desenvolvimento web.</p>
     </footer>
 </body>

@@ -12,7 +12,7 @@
   <img align="center" alt="caio-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 <br>
-  <img   src="http://img.shields.io/static/v1?label=STATUS&message=EM%20FINALIZADO&color=GREEN&style=for-the-badge">
+  <img   src="http://img.shields.io/static/v1?label=STATUS&message=%20FINALIZADO&color=GREEN&style=for-the-badge">
   
   <h1>Autor</h1>
   
